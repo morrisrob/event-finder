@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body, html {
+height: 100%;
+}
+.bg {
+background-image: url("../src/concert.jpg");
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.row {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
