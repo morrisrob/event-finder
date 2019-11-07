@@ -27,7 +27,6 @@ class PageContainer extends Component {
         whichButton: "search"
       });
     }
-    console.log("btnClicked!");
   }
 
   render() {

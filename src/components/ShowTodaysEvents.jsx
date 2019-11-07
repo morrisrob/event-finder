@@ -38,18 +38,10 @@ class ShowTodaysEvents extends Component {
   };
 
   componentDidMount(props) {
-    this.setState(
-      {
-        whichButton: this.props.whichButton,
-        searchString: this.props.searchString
-      },
-      console.log(
-        "props received!" +
-          this.props.whichButton +
-          " " +
-          this.props.searchString
-      )
-    );
+    this.setState({
+      whichButton: this.props.whichButton,
+      searchString: this.props.searchString
+    });
 
     if (this.props.whichButton === "todaysEvents") {
       this.showTodaysEvents();
@@ -59,10 +51,6 @@ class ShowTodaysEvents extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log(
-      "props updated!" + nextProps.whichButton + " " + nextProps.searchString
-    );
-
     if (nextProps.whichButton === "todaysEvents") {
       this.showTodaysEvents();
     } else {
@@ -72,7 +60,7 @@ class ShowTodaysEvents extends Component {
   }
 
   showTodaysEvents = event => {
-    this.setState({ btnClicked: true }, console.log(this.state.btnClicked));
+    this.setState({ btnClicked: true });
     const now = moment();
     const tomorrow = moment(now).add(1, "d");
     let events = [];
@@ -95,7 +83,6 @@ class ShowTodaysEvents extends Component {
   };
 
   renderTableData() {
-    console.log(this.state.events);
     this.state.events.sort((a, b) =>
       a.eventDateLocal > b.eventDateLocal ? 1 : -1
     ); //sort by date ascending
