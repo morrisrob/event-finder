@@ -1,15 +1,13 @@
-/* #tableContainer { background: rgb(161, 161, 159); } */
-
 a:link {
-    color: white;
+  color: white;
 }
 
 a:visited {
-    color: white;
+  color: white;
 }
 
 #tableContainer {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -21,7 +19,7 @@ a:visited {
     display: flex;
     text-align: left;
   }
-  
+
   table td::before {
     content: attr(label);
     font-weight: bold;

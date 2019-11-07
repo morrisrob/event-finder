@@ -5,15 +5,10 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('concert.jpg');
-
-background-size: cover;
-overflow-x:hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("concert.jpg");
+  background-size: cover;
+  overflow-x: hidden;
 }
 
 code {
@@ -21,15 +16,9 @@ code {
     monospace;
 }
 
-body, html {
-height: 100%;
-}
-.bg {
-/* background-image: url("../src/concert.jpg");
-height: 100vh;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover; */
+body,
+html {
+  height: 100%;
 }
 
 .row {
@@ -37,7 +26,8 @@ background-size: cover; */
   margin-bottom: 30px;
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
+body,
+html {
+  height: 100%;
+  margin: 0;
 }

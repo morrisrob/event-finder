@@ -1,17 +1,17 @@
 .App {
   text-align: center;
 
-      /* The image used */
-    /* background-image: url(./concert.jpg); */
+  /* The image used */
+  /* background-image: url(./concert.jpg); */
 
-    /* Full height */
-    height: 100vh;
-    width: 100vw;
+  /* Full height */
+  height: 100vh;
+  width: 100vw;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-logo {
@@ -34,7 +34,5 @@
 }
 
 #MainText {
-    margin-top: 100px;
+  margin-top: 100px;
 }
-
-
