@@ -1,23 +1,21 @@
 body {
-    background-image: url('./concert.jpg'),
-
+  background-image: url("./concert.jpg");
 }
 
 h1 {
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 3.0rem !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 3rem !important;
   font-weight: bold !important;
 }
 
 p {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   font-size: 1.25rem !important;
   font-weight: 700 !important;
 }
 
 .btn {
-    font-family: 'Roboto', sans-serif !important;
-    font-size: 1.0rem !important;
-    font-weight: 500 !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
 }
-
