@@ -1,0 +1,28 @@
+#mainText {
+    margin-top: 10%;
+    margin-bottom: 40px;
+}
+
+#searchBox {
+    width: 257px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+#searchBtn {
+    margin-right: 20px;
+
+}
+
+#pageTitle {
+    color: white;
+}
+
+.form-rounded {
+border-radius: 0.5rem;
+}
+
+.row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

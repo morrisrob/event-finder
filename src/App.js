@@ -7,11 +7,13 @@ import ShowTodaysEvents from './components/ShowTodaysEvents';
 import TopNavbar from './components/TopNavbar';
 import SearchForm from './components/SearchForm';
 import MainPage from './components/MainPage';
+import PageContainer from './components/PageContainer';
 
 function App() {
   return (
     <div className="App">
-      <ShowTodaysEvents />
+      <PageContainer />
+      {/* <ShowTodaysEvents /> */}
     </div>
   );
 }

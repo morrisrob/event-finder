@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+
+      /* The image used */
+    /* background-image: url(./concert.jpg); */
+
+    /* Full height */
+    height: 100vh;
+    width: 100vw;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .App-logo {
@@ -20,4 +32,9 @@
 .App-link {
   color: #09d3ac;
 }
+
+#MainText {
+    margin-top: 100px;
+}
+
 
