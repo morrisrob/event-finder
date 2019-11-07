@@ -7,3 +7,26 @@ a:link {
 a:visited {
     color: white;
 }
+
+#tableContainer {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  table thead {
+    display: none;
+    text-align: left;
+  }
+  table td {
+    display: flex;
+    text-align: left;
+  }
+  
+  table td::before {
+    content: attr(label);
+    font-weight: bold;
+    width: 120px;
+    min-width: 120px;
+    text-align: left;
+  }
+}

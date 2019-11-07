@@ -107,15 +107,16 @@ class ShowTodaysEvents extends Component {
             const { id, name, eventDateLocal, venue, webURI, ticketInfo } = event //destructuring
             return (
                 <tr key={id}>
-                    <td><Moment format="ddd, MMM Do">{eventDateLocal}</Moment></td>
-                    <td><Moment format="h:mm a">{eventDateLocal}</Moment></td>
-                    <td><a href={`http://www.stubhub.com/${webURI}`}>{name}</a></td>
-                    <td>{venue.name}</td>
+                    <td label="Date"><Moment format="ddd, MMM Do">{eventDateLocal}</Moment></td>
+                    <td label="Time"><Moment format="h:mm a">{eventDateLocal}</Moment></td>
+                    <td label="Event Name">{name}</td>
+                    <td label="Venue">{venue.name}</td>
                     
-                    <td>{new Intl.NumberFormat('en-US',
+                    <td label="Lowest Price">{new Intl.NumberFormat('en-US',
                         { style: 'currency', currency: 'USD' }
                     ).format(ticketInfo.minListPrice)}</td>
-                    <td>{ticketInfo.totalTickets}</td>
+                    <td label="Tickets Available">{ticketInfo.totalTickets}</td>
+                    <td>{ticketInfo.totalTickets > 0 && <a href={`http://www.stubhub.com/${webURI}`}>Buy Tickets</a>}</td>
                 </tr>
             )
         })
@@ -127,7 +128,7 @@ class ShowTodaysEvents extends Component {
         let events = [];
         return (
             <div id ="tableContainer" class="container">
-                <div id="eventsTable table-responsive">
+                <div id="eventsTable" class="table-responsive">
                     <table class="table table-striped table-dark "id='events'>
                         <thead>
                             <tr>
